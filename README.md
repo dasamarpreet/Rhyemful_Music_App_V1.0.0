@@ -8,4 +8,4 @@ The App is Still Under Devleopment Phase, support from community is required. We
    ## OPEN SOURCE ##
    
      
-   Developer's  -> Amar Preet Das, Piyus Kumar, Aditi Sood.
+   Developer's  -> ** Amar Preet Das **, Piyus Kumar, Aditi Sood.
