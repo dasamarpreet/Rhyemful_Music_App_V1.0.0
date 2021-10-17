@@ -58,7 +58,7 @@ public class AboutFragment extends Fragment {
                 // what to do with it.
                 share.putExtra(Intent.EXTRA_SUBJECT, "Try the all new Rhymeful Music Player App. Download from here:");
                 share.putExtra(Intent.EXTRA_TEXT, "Try the all new Rhymeful Music Player App. Download from here:" +
-                        "https://drive.google.com/drive/folders/1Bf4_M0j53hs5f0E53MUhS4MtOkmRio7S?usp=sharing");
+                        "https://drive.google.com/drive/folders/1Si321YNmcRxOysElF44G1jvOPR3yuifK?usp=sharing");
 
                 startActivity(Intent.createChooser(share, "Share link!"));
             }

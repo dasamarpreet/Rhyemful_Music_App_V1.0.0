@@ -251,7 +251,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 break;
 
             case R.id.SourceCodeGitHub:
-                String urlTextGit = "https://www.github.com";
+                String urlTextGit = "https://github.com/dasamarpreet/Rhyemful_Music_App_V1.0.0";
                 StyleableToast.makeText(getApplicationContext(), "Redirecting to Github", Toast.LENGTH_SHORT, R.style.customToast).show();
                 // Implicit Intent to open a web page
                 Uri webpageGit = Uri.parse(urlTextGit);
