@@ -1,0 +1,101 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyAudioPlayer" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#8591D8</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!-- My customized Theme Colors ........ signed   -->
+
+    <style name="customToastFav">
+        <item name="colorBackground">#1DE9B6</item>
+        <item name="textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="strokeColor">#FFFFFF</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="length">LONG</item>
+        <item name="iconRight">@drawable/coding</item>
+    </style>
+
+    <style name="customToast">
+        <item name="colorBackground">#1DE9B6</item>
+        <item name="textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="strokeColor">#FFFFFF</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="length">LONG</item>
+    </style>
+
+    <style name="Logo_Animation_Splash">
+        <item name="android:src">@drawable/r_logo_animation_light</item>
+    </style>
+
+    <style name="Song_List_Body_Background_custom">
+        <item name="android:background">@color/Body_Bg_song_list_light</item>;
+    </style>
+
+    <style name="Song_List_header_Background_custom">
+        <item name="android:background">@color/header_title_song_list_light</item>;
+    </style>
+
+    <style name="Song_List_footer_Background_custom">
+        <item name="android:backgroundTint">@color/footer_current_song_light</item>;
+    </style>
+
+    <style name="Song_List_recycler_view_custom">
+        <item name="android:background">@color/recycler_view_song_list_light</item>;
+    </style>
+
+    <style name="Song_List_text_view_custom">
+        <item name="android:color">@color/text_view_song_list_light</item>;
+    </style>
+
+    <style name="SeekBarTheme" parent="Widget.AppCompat.SeekBar">
+        <item name="android:colorControlActivated">#F44336</item>
+        <item name="android:colorControlNormal">#000000</item>
+        <item name="android:radius">20dp</item>
+    </style>
+
+    <style name="Background_DARK">
+        <item name="android:background">@color/background_light</item>;
+    </style>
+
+    <style name="Background_DARK_Splash">
+        <item name="android:background">#49bdc2</item>;
+    </style>
+
+    <style name="View_bg_DARK">
+        <item name="android:background">@color/view_background_light</item>;
+    </style>
+
+    <style name="Bottom_bg_DARK">
+        <item name="android:background">@color/bottom_background_light</item>;
+    </style>
+
+    <style name="Text_DARK">
+        <item name="android:textColor">@color/dark_text</item>;
+    </style>
+
+    <style name="Text_DARK_splash">
+        <item name="android:textColor">@color/colorPrimary</item>;
+    </style>
+
+    <style name="Icons_Img_DARK">
+        <item name="android:buttonTint">@color/icons_image_light</item>;
+    </style>
+
+    <style name="Icons_Btn_DARK">
+        <item name="android:tint">@color/icons_button_light</item>
+    </style>
+
+</resources>

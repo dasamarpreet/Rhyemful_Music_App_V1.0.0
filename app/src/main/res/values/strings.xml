@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rhymeful</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_info">Rhymeful music player is an offline music player\nwhich is available free of cost. In case if you find\nany bug, then don\'t forget to report it on the \ncontact infos given below</string>
+    <string name="designed_developed_by"><![CDATA[Designed & Developed By Team of:]]></string>
+
+</resources>

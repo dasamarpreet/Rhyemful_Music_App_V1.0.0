@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_menu"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/sort_options"
+        android:title="Sort by"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:title="Name"
+                android:id="@+id/by_name"
+                android:icon="@drawable/ic_sort_by_alpha"
+                app:showAsAction="withText"/>
+            <item
+                android:title="Date"
+                android:id="@+id/by_date"
+                android:icon="@drawable/ic_sort_by_date"
+                app:showAsAction="withText"/>
+            <item
+                android:title="Size"
+                android:id="@+id/by_size"
+                android:icon="@drawable/ic_sort_by_size"
+                app:showAsAction="withText"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/themeOption"
+        android:title="Theme"
+        app:showAsAction="never">
+        <menu>
+        <item
+            android:id="@+id/dark_theme"
+            android:title="Dark"
+            android:icon="@drawable/ic_night"
+            app:showAsAction="withText"/>
+        <item
+            android:id="@+id/light_theme"
+            android:title="Light"
+            android:icon="@drawable/ic_sun"
+            app:showAsAction="withText"/>
+        <item
+            android:id="@+id/system_theme"
+            android:title="System"
+            android:icon="@drawable/ic_android_system"
+            app:showAsAction="withText"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/sourceCode"
+        android:title="Source Code"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/SourceCodeGitHub"
+                android:title="GitHub"
+                android:icon="@drawable/github_icon"
+                app:showAsAction="withText"/>
+            <item
+                android:id="@+id/SourceCodeOneDrive"
+                android:title="One Drive"
+                android:icon="@drawable/one_drive_icon"
+                app:showAsAction="withText"/>
+            <item
+                android:id="@+id/SourceCodeGoogleDrive"
+                android:title="Google Drive"
+                android:icon="@drawable/google_drive_icon"
+                app:showAsAction="withText"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NowPlayingFragmentBottom">
+
+    <RelativeLayout
+        android:id="@+id/card_bottom_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/bottom_album_art"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_variant_no_bg" />
+
+        <TextView
+            android:id="@+id/song_name_miniPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="13dp"
+            android:layout_toStartOf="@+id/musicBarGif"
+            android:layout_toEndOf="@id/bottom_album_art"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Song name here"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now Playing"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:layout_toEndOf="@id/bottom_album_art" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/musicBarGif"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/pause_gif2" />
+    </RelativeLayout>
+
+</FrameLayout>
