@@ -315,21 +315,21 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public void onBackPressed() {
-        try {
+//        try {
             if (backPressedTime + 2000 > System.currentTimeMillis()){
                 super.onBackPressed();
                 backToast.cancel();
                 mediaPlayerid.stop();
-                mediaPlayerid.release();
+//                mediaPlayerid.release();
             }
             else{
                 backToast = StyleableToast.makeText(getApplicationContext(), "Press again to close the App!", Toast.LENGTH_SHORT, R.style.customToast);
                 backToast.show();
             }
             backPressedTime = System.currentTimeMillis();
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
     }
 }

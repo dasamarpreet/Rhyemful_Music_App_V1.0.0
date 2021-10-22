@@ -24,11 +24,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
+import android.transition.Slide;
+import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -54,11 +57,13 @@ public class PlayerTestingNew extends AppCompatActivity implements ActionPlaying
     private Handler handler = new Handler();
     private Thread playThread, prevThread, nextThread;
     MusicService musicService;
+    ImageButton backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setFullScreen();
+        setAnimation();
         setContentView(R.layout.activity_player_testing_new);
         getSupportActionBar().hide();
         initViews();
@@ -105,6 +110,19 @@ public class PlayerTestingNew extends AppCompatActivity implements ActionPlaying
                 else{
                     shuffleBoolean = true;
                     shuffleBtn.setImageResource(R.drawable.ic_shuffle_on);
+                }
+            }
+        });
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                if(Build.VERSION.SDK_INT>20){
+                    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(PlayerTestingNew.this).toBundle());
+                }
+                else {
+                    startActivity(intent);
                 }
             }
         });
@@ -429,6 +447,7 @@ public class PlayerTestingNew extends AppCompatActivity implements ActionPlaying
         repeatBtn = findViewById(R.id.repeat_btn_new);
         playPauseBtn = findViewById(R.id.play_pause_btn_new);
         seekBar = findViewById(R.id.seekBar_new);
+        backButton = findViewById(R.id.back_button_new);
     }
 
     private void metaData(Uri uri){
@@ -506,5 +525,16 @@ public class PlayerTestingNew extends AppCompatActivity implements ActionPlaying
     @Override
     public void onServiceDisconnected(ComponentName componentName) {
         musicService = null;
+    }
+
+    public void setAnimation() {
+        if (Build.VERSION.SDK_INT > 20) {
+            Slide slide = new Slide();
+            slide.setSlideEdge(Gravity.RIGHT);
+            slide.setDuration(300);
+            slide.setInterpolator(new DecelerateInterpolator());
+            getWindow().setExitTransition(slide);
+            getWindow().setEnterTransition(slide);
+        }
     }
 }

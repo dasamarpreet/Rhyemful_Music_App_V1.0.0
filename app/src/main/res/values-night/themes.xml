@@ -77,8 +77,8 @@
         <item name="android:background">@color/view_background_dark</item>;
     </style>
 
-    <style name="Bottom_bg_DARK">
-        <item name="android:background">@color/bottom_background_dark</item>;
+    <style name="Bottom_bg_Player_DARK">
+        <item name="android:background">@drawable/player_background_dark</item>;
     </style>
 
     <style name="Text_DARK">
