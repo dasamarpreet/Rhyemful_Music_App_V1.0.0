@@ -57,4 +57,7 @@ dependencies {
 
     //custom toast
     implementation 'com.muddzdev:styleabletoast:2.0.1'
+
+    // slider view
+    implementation 'com.r0adkll:slidableactivity:2.1.0'
 }

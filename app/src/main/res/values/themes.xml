@@ -98,4 +98,9 @@
         <item name="android:tint">@color/icons_button_light</item>
     </style>
 
+    <style name="Theme.MyAudioPlayer.SlidrActivityTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
 </resources>

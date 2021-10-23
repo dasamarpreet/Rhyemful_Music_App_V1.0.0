@@ -40,6 +40,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.r0adkll.slidr.Slidr;
+import com.r0adkll.slidr.model.SlidrInterface;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -57,14 +59,16 @@ public class PlayerTestingNew extends AppCompatActivity implements ActionPlaying
     private Handler handler = new Handler();
     private Thread playThread, prevThread, nextThread;
     MusicService musicService;
-    ImageButton backButton;
+//    ImageButton backButton;
+    private SlidrInterface slidr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setFullScreen();
-        setAnimation();
+//        setAnimation();
         setContentView(R.layout.activity_player_testing_new);
+        slidr = Slidr.attach(this);
         getSupportActionBar().hide();
         initViews();
         getIntenMethod();
@@ -110,19 +114,6 @@ public class PlayerTestingNew extends AppCompatActivity implements ActionPlaying
                 else{
                     shuffleBoolean = true;
                     shuffleBtn.setImageResource(R.drawable.ic_shuffle_on);
-                }
-            }
-        });
-
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                if(Build.VERSION.SDK_INT>20){
-                    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(PlayerTestingNew.this).toBundle());
-                }
-                else {
-                    startActivity(intent);
                 }
             }
         });
@@ -447,7 +438,7 @@ public class PlayerTestingNew extends AppCompatActivity implements ActionPlaying
         repeatBtn = findViewById(R.id.repeat_btn_new);
         playPauseBtn = findViewById(R.id.play_pause_btn_new);
         seekBar = findViewById(R.id.seekBar_new);
-        backButton = findViewById(R.id.back_button_new);
+//        backButton = findViewById(R.id.back_button_new);
     }
 
     private void metaData(Uri uri){

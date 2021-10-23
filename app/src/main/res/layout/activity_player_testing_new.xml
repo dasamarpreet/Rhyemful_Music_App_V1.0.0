@@ -47,16 +47,6 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/back_button_new"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/ic_chevron_left"
-        android:backgroundTint="@color/black"
-        android:rotation="-90" />
-
     <TextView
         android:id="@+id/song_name_new"
         style="@style/Text_DARK"

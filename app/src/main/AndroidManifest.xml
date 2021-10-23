@@ -15,10 +15,10 @@
         android:theme="@style/Theme.MyAudioPlayer">
         <activity
             android:name=".PlayerTestingNew"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.MyAudioPlayer.SlidrActivityTheme"/>
         <activity
             android:name=".SplashActivity"
-
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
