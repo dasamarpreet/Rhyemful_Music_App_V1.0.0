@@ -1,4 +1,7 @@
 package com.dasamarpreet.myaudioplayer;
+//
+//It is a class that is used to get and set the path, title, album, artist, duration and id of the song.
+//        It is used to access information of each song.
 
 public class MusicFiles {
     private String path;

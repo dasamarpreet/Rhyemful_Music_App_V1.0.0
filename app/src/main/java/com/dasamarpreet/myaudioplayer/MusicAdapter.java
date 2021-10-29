@@ -25,6 +25,9 @@ import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.io.File;
 import java.util.ArrayList;
+//
+//This java file is an adapter for all songs/music class. Being an Adapter, it is used to inflate the
+//        list layout i.e., Recycler View, for the favourites items to be displayed. And it also extracts the name of the file.
 
 public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MyVieHolder> {
 

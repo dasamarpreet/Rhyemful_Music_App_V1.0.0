@@ -21,6 +21,8 @@ import com.bumptech.glide.Glide;
 
 import pl.droidsonroids.gif.GifImageView;
 
+//Is used to create the bottom view of the player i.e., the mini player. It displays the current chosen
+//        track and the image art of that particular song.
 public class NowPlayingFragmentBottom extends Fragment{
     ImageView albumArt;
     TextView songName;

@@ -19,6 +19,11 @@ import android.view.ViewGroup;
  * Use the {@link AlbumFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+//
+//It is used to set the album adapter on the interface which is responsible to display the albums and
+//        is also responsible to set the adapter of the recycler view along with its layout manager (here, Grid View).
+
+
 public class AlbumFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match

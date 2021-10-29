@@ -8,6 +8,9 @@ import static com.dasamarpreet.myaudioplayer.MusicService.mediaPlayerid;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+//
+//It is used to receive the actions from the notification bar. That is, when a user uses any action on
+//        the notification of the player, then this class identifies it and performs the respective operation.
 
 public class NotificationReceiver extends BroadcastReceiver {
     @Override

@@ -24,6 +24,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+//This java file is used for providing the functions to the about us fragment like opening the contact us links or sharing link.
+
 public class AboutFragment extends Fragment {
 
     View view;

@@ -13,6 +13,10 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+//
+//It is used to extract the image and name of the songs in an album from the audio files and is also
+//        responsible to set the adapter of the recycler view along with its layout manager (here, Linear View).
+
 
 public class AlbumDetails extends AppCompatActivity {
     RecyclerView recyclerView;

@@ -17,6 +17,9 @@ import com.bumptech.glide.Glide;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.util.ArrayList;
+//
+//This java file is an adapter for favourite class. Being an Adapter, it is used to inflate the list
+//        layout i.e., Recycler View, for the favourites items to be displayed. And it also extracts the name of the file.
 
 public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHolder> {
 

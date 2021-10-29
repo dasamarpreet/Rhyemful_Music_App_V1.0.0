@@ -27,6 +27,10 @@ import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
 import java.util.ArrayList;
+//
+//Is the main class for playing the music or audio files in the application. Used to set the metadata
+//        of song and to play an audio file with the help of Media Player class. With the help of different
+//        functions that we created or override, the various operations are carried out.
 
 public class MusicService extends Service implements MediaPlayer.OnCompletionListener {
     IBinder mBinder = new MyBinder();

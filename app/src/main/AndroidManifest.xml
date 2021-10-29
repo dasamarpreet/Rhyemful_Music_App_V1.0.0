@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<!--     It is an XML file which contains important metadata about the android app. This includes package name, activity name, main activity,-->
+<!--    android version support, hardware feature support, permissions, services, broadcast receivers, content providers, etc. -->
+
 
     <application
         android:name=".ApplicationClass"

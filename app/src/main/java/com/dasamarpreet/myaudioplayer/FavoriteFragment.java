@@ -28,6 +28,10 @@ import java.util.ArrayList;
  * Use the {@link FavoriteFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+//
+//: It is used to set the favourite adapter on the interface which is responsible to display the songs
+//        and is also responsible to set the adapter of the recycler view along with its layout manager (here, Grid View).
+
 public class FavoriteFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match

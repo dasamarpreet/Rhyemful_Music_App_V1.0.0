@@ -18,6 +18,11 @@ import android.view.ViewGroup;
  * Use the {@link SongsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+
+//This is the home fragment that is used to display all the songs that is present on the device storage.
+//        This class use Recycler View to set the Music Adapter layout to display all songs in a list form with
+//        the help of Linear Layout Manager.
+
 public class SongsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match

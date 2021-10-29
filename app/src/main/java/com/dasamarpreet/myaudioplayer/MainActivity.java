@@ -36,6 +36,11 @@ import com.google.android.material.tabs.TabLayout;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.util.ArrayList;
+//
+//This is the main file which is very important for this app. It has a lot of functions that the application performs. Like,
+//        it is used to ask for the permission to Read the Storage, used to set the pages layout for all fragments like all songs,
+//        albums, favourite and about us. Moreover, it is also used to set and display  the menu options on
+//        each interface. At last but not the least, it has some other functions also which is needed to run the app smoothly.
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
     public static final int REQUEST_CODE = 1;

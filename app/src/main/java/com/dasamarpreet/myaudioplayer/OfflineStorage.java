@@ -38,7 +38,9 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
-
+//
+//: Is a special class that is designed to store the temporary app data in the database with the help
+//        of Shared Preferences. So, it is used to save the data for the favourites song inside a database.
 public class OfflineStorage {
 
     private SharedPreferences preferences;

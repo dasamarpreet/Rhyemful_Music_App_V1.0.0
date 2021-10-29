@@ -46,6 +46,10 @@ import com.r0adkll.slidr.model.SlidrInterface;
 import java.util.ArrayList;
 import java.util.Random;
 
+//: This java file is the functional file for the Music Player Screen that displays when a track is chosen.
+//        When we play a song, the player screen appears, and hence all the functionality that is present on
+//        this screen is achieved with the help of this java class.
+
 public class PlayerTestingNew extends AppCompatActivity implements ActionPlaying, ServiceConnection {
 
     TextView song_name, artist_name, duration_played, duration_total;

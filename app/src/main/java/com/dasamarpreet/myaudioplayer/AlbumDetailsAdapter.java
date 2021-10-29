@@ -16,6 +16,11 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
+//This java file is an adapter for the songs present in each album. Being an Adapter, it is used to
+//        inflate the layout i.e., Recycler View, for the songs in the albums to be displayed. And it
+//        also provides the   On Click function to the songs
+
+
 public class AlbumDetailsAdapter extends RecyclerView.Adapter<AlbumDetailsAdapter.MyHolder> {
     private Context mContext;
     static ArrayList<MusicFiles> albumFiles;

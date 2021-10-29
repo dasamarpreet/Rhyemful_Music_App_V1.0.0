@@ -6,6 +6,10 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.os.Build;
 
+//
+//This class is used for extending the Application class and hence is responsible to set the Notification
+//        Channel for the app which in turn is used to display the notification of the music when we perform some actions.
+
 public class ApplicationClass extends Application {
     public static final String CHANNEL_ID_1 = "channel1";
     public static final String CHANNEL_ID_2 = "channel2";
